@@ -39,7 +39,7 @@ if __name__=='__main__':
     m.CreateMaze()
     dSearch,fwdPath=DFS(m)
     a=agent(m,shape="arrow",footprints=True,color=COLOR.blue,filled=True)
-    b=agent(m,shape="arrow",footprints=True,color=COLOR.red,filled=True)
+    b=agent(m,shape="arrow",footprints=True,color=COLOR.green,filled=True)
     m.tracePath({a:dSearch} , delay=20,kill=True)
     m.tracePath({b:fwdPath} , delay=50)
     
